@@ -1,22 +1,23 @@
 import { Injectable }    from '@angular/core';
-import { Headers, Http } from '@angular/http';
-
-
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Response } from '@angular/http';
 
 import { Hero } from './hero';
+import * as glob from "./shared/global"; 
 
+const httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
 
 @Injectable()
 export class HeroService{
-    private heroesUrl = 'app/heroes';  // URL to web api
-    private headers = new Headers({'Content-Type': 'application/json'});
+    private heroesUrl = glob.server + '/heroes';  
 
-    constructor(private http: Http) { }
+    constructor(private http: HttpClient) { }
   
     getHeroes(): Promise<Hero[]> {
          return this.http.get(this.heroesUrl)
                .toPromise()
-               .then(response => response.json().data as Hero[])
                .catch(this.handleError);
     }
     getHero(id: number): Promise<Hero> {
@@ -26,21 +27,20 @@ export class HeroService{
     update(hero: Hero): Promise<Hero> {
         const url = `${this.heroesUrl}/${hero.id}`;
         return this.http
-            .put(url, JSON.stringify(hero), {headers: this.headers})
+            .put(url, hero, httpOptions)
             .toPromise()
             .then(() => hero)
             .catch(this.handleError);
     }
     create(name: string): Promise<Hero> {
         return this.http
-            .post(this.heroesUrl, JSON.stringify({name: name}), {headers: this.headers})
+            .post(this.heroesUrl, {name: name}, httpOptions)
             .toPromise()
-            .then(res => res.json().data)
             .catch(this.handleError);
     }
     delete(id: number): Promise<void> {
         const url = `${this.heroesUrl}/${id}`;
-        return this.http.delete(url, {headers: this.headers})
+        return this.http.delete(url, httpOptions)
             .toPromise()
             .then(() => null)
             .catch(this.handleError);

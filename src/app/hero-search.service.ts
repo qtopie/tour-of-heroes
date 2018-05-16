@@ -1,15 +1,24 @@
-import { Injectable }     from '@angular/core';
-import { Http, Response } from '@angular/http';
-import { Observable } from 'rxjs';
-import 'rxjs/add/operator/map'
-import { Hero }           from './hero';
+import { Injectable } from '@angular/core';
+import { Response } from '@angular/http';
+import { Observable, of } from 'rxjs';
+import 'rxjs/add/operator/map';
+import { catchError, map, tap } from 'rxjs/operators';
+import { Hero } from './hero';
+import { HttpClient } from '@angular/common/http';
+import * as glob from "./shared/global";
 
 @Injectable()
 export class HeroSearchService {
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) { }
+  /* GET heroes whose name contains search term */
   search(term: string): Observable<Hero[]> {
-    return this.http
-               .get(`app/heroes/?name=${term}`)
-               .map((r: Response) => r.json().data as Hero[]);
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+
+    return this.http.get<Hero[]>(`api/heroes/?name=${term}`)
+      .pipe();
   }
+
 }
