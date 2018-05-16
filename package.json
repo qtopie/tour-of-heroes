@@ -23,12 +23,13 @@
     "@angular/platform-browser-dynamic": "^6.0.1",
     "@angular/platform-server": "^6.0.1",
     "@angular/router": "^6.0.1",
+    "angular-in-memory-web-api": "~0.6.0",
     "core-js": "^2.4.1",
+    "hoek": "^5.0.3",
     "rxjs": "^6.1.0",
     "rxjs-compat": "^6.1.0",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.8.26",
-    "angular-in-memory-web-api": "~0.6.0"
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.0",
