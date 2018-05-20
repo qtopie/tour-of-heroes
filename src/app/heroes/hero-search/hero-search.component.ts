@@ -7,7 +7,7 @@ import {
 import 'rxjs/add/observable/of';
 
 import { HeroSearchService } from './hero-search.service';
-import { Hero } from './hero';
+import { Hero } from '../shared/hero.model';
 
 @Component({
     // moduleId: module.id,

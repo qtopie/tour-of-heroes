@@ -3,9 +3,9 @@ import { Response } from '@angular/http';
 import { Observable, of } from 'rxjs';
 import 'rxjs/add/operator/map';
 import { catchError, map, tap } from 'rxjs/operators';
-import { Hero } from './hero';
+import { Hero } from '../shared/hero.model';
 import { HttpClient } from '@angular/common/http';
-import * as glob from "./shared/global";
+import * as glob from "../../shared/global";
 
 @Injectable()
 export class HeroSearchService {

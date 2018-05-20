@@ -1,6 +1,10 @@
 # TourOfHeroes
 
-Quick start sample for Angular. (from https://angular.io/tutorial/)
+Quick start sample for Angular -- [Angular Docs](https://angular.io/tutorial/).
+
+## Style Guide
+
+[Angular style guide](https://angular.io/guide/styleguide)
 
 ## Development server
 

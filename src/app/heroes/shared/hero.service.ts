@@ -2,8 +2,8 @@ import { Injectable }    from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Response } from '@angular/http';
 
-import { Hero } from './hero';
-import * as glob from "./shared/global"; 
+import { Hero } from '../shared/hero.model';
+import * as glob from "../../shared/global"; 
 
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
