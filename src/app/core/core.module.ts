@@ -5,10 +5,21 @@ import { DashboardComponent } from "../dashboard/dashboard.component";
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { DashboardModule } from '../dashboard/dashboard.module';
 
+// Imports for loading & configuring the in-memory web api
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from '../shared/in-memory-data.service';
+
 @NgModule({
     imports: [
-        CommonModule, // we use ngFor
-        DashboardModule
+        CommonModule, // we use ngFor ??
+        DashboardModule,
+
+        // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+        // and returns simulated server responses.
+        // Remove it when a real server is ready to receive requests.
+        HttpClientInMemoryWebApiModule.forRoot(
+            InMemoryDataService, { dataEncapsulation: false }
+        ),
     ],
     exports: [],
     declarations: [],
