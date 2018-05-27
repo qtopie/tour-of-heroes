@@ -8,6 +8,7 @@ import { DashboardModule } from '../dashboard/dashboard.module';
 // Imports for loading & configuring the in-memory web api
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from '../shared/in-memory-data.service';
+import { PageNotFoundComponent } from './not-found.component';
 
 @NgModule({
     imports: [
@@ -22,7 +23,7 @@ import { InMemoryDataService } from '../shared/in-memory-data.service';
         ),
     ],
     exports: [],
-    declarations: [],
+    declarations: [PageNotFoundComponent],
     providers: [LoggerService]
 })
 
