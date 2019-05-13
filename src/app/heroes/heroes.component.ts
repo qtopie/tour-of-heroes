@@ -5,7 +5,7 @@ import { Hero } from './shared/hero.model';
 import { HeroService } from './shared/hero.service';
 
 @Component({
-  selector: 'my-heroes',
+  selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
 })

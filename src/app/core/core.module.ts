@@ -9,6 +9,7 @@ import { DashboardModule } from '../dashboard/dashboard.module';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from '../shared/in-memory-data.service';
 import { PageNotFoundComponent } from './not-found.component';
+import { environment } from 'environments/environment';
 
 @NgModule({
     imports: [
@@ -18,9 +19,10 @@ import { PageNotFoundComponent } from './not-found.component';
         // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
         // and returns simulated server responses.
         // Remove it when a real server is ready to receive requests.
-        HttpClientInMemoryWebApiModule.forRoot(
-            InMemoryDataService, { dataEncapsulation: false }
-        ),
+        environment.production ?
+            [] : HttpClientInMemoryWebApiModule.forRoot(
+                InMemoryDataService, { dataEncapsulation: false }
+            ),
     ],
     exports: [],
     declarations: [PageNotFoundComponent],

@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { Hero } from '../shared/hero.model';
 import { HttpClient } from '@angular/common/http';
-import * as glob from "../../shared/global";
+import * as glob from '../../shared/global';
 
 @Injectable()
 export class HeroSearchService {
@@ -15,7 +15,7 @@ export class HeroSearchService {
       return of([]);
     }
 
-    return this.http.get<Hero[]>(`api/heroes/?name=${term}`)
+    return this.http.get<Hero[]>(glob.server + `/heroes/?name=${term}`)
       .pipe(
         tap(_ => this.log(`found heroes matching "${term}"`)),
         catchError(this.handleError<Hero[]>('searchHeroes', []))
@@ -23,7 +23,7 @@ export class HeroSearchService {
   }
 
   log(message: string) {
-    console.debug(message);
+    console.log(message);
   }
 
   /**
