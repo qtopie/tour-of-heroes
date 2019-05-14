@@ -9,7 +9,7 @@ import { DashboardModule } from '../dashboard/dashboard.module';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from '../shared/in-memory-data.service';
 import { PageNotFoundComponent } from './not-found.component';
-import { environment } from 'environments/environment';
+import { environment } from './../../environments/environment';
 
 @NgModule({
     imports: [
