@@ -7,8 +7,8 @@ describe('tour-of-heroes App', function() {
     page = new TourOfHeroesPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying tour-of-heroes', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toMatch('^Tour of Heroes.*');
   });
 });

@@ -1,0 +1,12 @@
+---
+kind: pipeline
+name: default
+
+
+steps:
+- name: build
+  image: node
+  commands:
+    - npm install
+    - ./node_modules/.bin/ng build
+    # - ./node_modules/.bin/ng test --watch=false
