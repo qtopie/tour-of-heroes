@@ -9,4 +9,9 @@ steps:
   commands:
     - npm install
     - ./node_modules/.bin/ng build
-    # - ./node_modules/.bin/ng test --watch=false
+
+- name: test
+  image: artificerpi/nodejs-chrome
+  commands:
+    - ./node_modules/.bin/ng e2e
+    - ./node_modules/.bin/ng test --browsers=ChromeHeadless --watch=false
