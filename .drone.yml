@@ -12,6 +12,7 @@ steps:
 
 - name: test
   image: artificerpi/nodejs-chrome
+  privileged: true
   commands:
     - ./node_modules/.bin/ng e2e
     - ./node_modules/.bin/ng test --browsers=ChromeHeadless --watch=false
