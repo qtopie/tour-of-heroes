@@ -5,7 +5,7 @@ name: default
 
 steps:
 - name: build
-  image: node
+  image: artificerpi/nodejs-chrome
   commands:
     - npm install
     - ./node_modules/.bin/ng build
