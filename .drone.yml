@@ -6,13 +6,14 @@ name: default
 steps:
 - name: build
   image: artificerpi/nodejs-chrome
+  user: node
   commands:
     - npm install
     - ./node_modules/.bin/ng build
 
 - name: test
   image: artificerpi/nodejs-chrome
-  privileged: true
+  user: node
   commands:
     - ./node_modules/.bin/ng e2e
     - ./node_modules/.bin/ng test --browsers=ChromeHeadless --watch=false
