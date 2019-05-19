@@ -22,3 +22,11 @@ script:
 - ng build --prod --base-href https://artificerpi.github.io/tour-of-heroes/
 - ng test --watch=false --browsers=ChromeHeadless
 - ng e2e
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/
+  on:
+    branch: master
