@@ -1,7 +1,6 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { CommonModule } from "@angular/common";
-import { LoggerService } from "./logger.service";
-import { DashboardComponent } from "../dashboard/dashboard.component";
+import { CommonModule } from '@angular/common';
+import { LoggerService } from './logger.service';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { DashboardModule } from '../dashboard/dashboard.module';
 

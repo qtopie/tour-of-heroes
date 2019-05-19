@@ -5,7 +5,7 @@ import { HeroService } from '../heroes/shared/hero.service';
 
 @Component({
     // moduleId: module.id,
-    selector: 'my-dashboard',
+    selector: 'dashboard',
     templateUrl: './dashboard.component.html',
     styleUrls: ['./dashboard.component.css']
 })
@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
             .subscribe(
                 heroes => {
                     if (heroes !== undefined) {
-                        this.heroes = heroes.slice(1, 5)
+                        this.heroes = heroes.slice(1, 5);
                     }
                 }
             );

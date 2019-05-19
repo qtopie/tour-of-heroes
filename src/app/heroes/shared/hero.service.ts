@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
 import { Hero } from '../shared/hero.model';
-import * as glob from "../../shared/global";
+import * as glob from '../../shared/global';
 
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -46,7 +46,7 @@ export class HeroService {
 
     create(name: string): Observable<Hero> {
         return this.http
-            .post<Hero>(this.heroesUrl, { name: name }, httpOptions)
+            .post<Hero>(this.heroesUrl, { name }, httpOptions)
             .pipe(
                 tap((hero: Hero) => this.log(`added hero w/ id=${hero.id}`)),
                 catchError(this.handleError<Hero>('addHero'))
@@ -63,7 +63,8 @@ export class HeroService {
     }
 
     log(message: string) {
-        console.debug(message);
+        // TODO replace console debug
+        // console.debug(message);
     }
 
     /**
