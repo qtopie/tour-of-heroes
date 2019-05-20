@@ -18,7 +18,7 @@ stages:
   - name: UT
   - name: e2e
   - name: build
-  - name: release
+  # - name: release
     
 jobs:
   include:
@@ -41,9 +41,6 @@ jobs:
         - ng e2e
 
     - stage: build
-      cache:
-        directories:
-          - dist/
       script:
         - ng build --prod --base-href https://artificerpi.github.io/tour-of-heroes/
         - "for lang in zh-CN; do
@@ -51,17 +48,12 @@ jobs:
                 --i18n-format xlf --i18n-locale $lang --output-path=dist/$lang 
                 --base-href https://artificerpi.github.io/tour-of-heroes/$lang/;
           done"
-
-    - stage: release
-      cache:
-        directories:
-          - dist/
-      script:
-        deploy:
-          provider: pages
-          skip_cleanup: true
-          # read $GITHUB_TOKEN from travis-ci config
-          github_token: $GITHUB_TOKEN
-          local_dir: dist/
-          on:
-            branch: master
+    # - stage: release
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        # read $GITHUB_TOKEN from travis-ci config
+        github_token: $GITHUB_TOKEN
+        local_dir: dist/
+        on:
+          branch: master
