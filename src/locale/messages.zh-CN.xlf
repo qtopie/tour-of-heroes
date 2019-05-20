@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="f65253954b66e929a8b4d5ecaf61f9129f8cec64" datatype="html">
+        <source>Dashboard</source>
+        <target>概览</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="33a29e29d6c1ae044e8e3350733a49c8dbeb18af" datatype="html">
+        <source>Heroes</source>
+        <target>英雄列表</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c27c43ba5843a0c79cb1526bf6296208727912c0" datatype="html">
+        <source>Hero Search</source>
+        <target>搜索英雄</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/hero-search/hero-search.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8febbf66ec19fa6037919caf360d1ff7cb1115a0" datatype="html">
+        <source>Top Heroes</source>
+        <target>英雄榜</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7f0b2640a3f54b2cd43e50bf76b59bb52d01f039" datatype="html">
+        <source>My Heroes</source>
+        <target>我的英雄</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/heroes.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4ed01e8f7232516922954b7f7f8c7e54aef965a9" datatype="html">
+        <source>Hero name:</source>
+        <target>英雄名字：</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/heroes.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="471dacbd8bce85756ead9d3220829d4e0d909522" datatype="html">
+        <source>
+    Add
+  </source>
+        <target>添加</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/heroes.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dc428135354089c90700780a546dc086747349e0" datatype="html">
+        <source>
+    <x id="INTERPOLATION" equiv-text="{{selectedHero.name | uppercase}}"/> is my hero
+  </source>
+  <target>
+    <x id="INTERPOLATION" equiv-text="{{selectedHero.name | uppercase}}"/> 是我的英雄
+  </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/heroes.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="97e7da30de7499fcf212e1e0fd717865ce2aca3d" datatype="html">
+        <source>View Details</source>
+         <target>查看详情</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/heroes.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5ca2042fa1f6c46b29cf9a18d36dfb953584a98c" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{hero.name}}"/> details!</source>
+        <target><x id="INTERPOLATION" equiv-text="{{hero.name}}"/> 详情!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/hero-detail/hero-detail.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bc80a1518bec685d290b88d25258b8530bcd9736" datatype="html">
+        <source>id: </source>
+        <target>id: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/hero-detail/hero-detail.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20ad95afed1dffb708e17578f479b2cc146cb473" datatype="html">
+        <source>name: </source>
+        <target>名字: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/hero-detail/hero-detail.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+        <target>保存</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/hero-detail/hero-detail.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cda31dbd724cf5f4fa7a4274d9120651490c8a8c" datatype="html">
+        <source>Back</source>
+        <target>返回</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/heroes/hero-detail/hero-detail.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

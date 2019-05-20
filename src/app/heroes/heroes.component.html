@@ -1,8 +1,8 @@
 
-  <h2>My Heroes</h2>
+  <h2 i18n>My Heroes</h2>
   <div>
-  <label>Hero name:</label> <input #heroName />
-  <button (click)="add(heroName.value); heroName.value=''">
+  <label i18n>Hero name:</label> <input #heroName />
+  <button i18n (click)="add(heroName.value); heroName.value=''">
     Add
   </button>
 </div>
@@ -16,8 +16,8 @@
     </li>
   </ul>
 <div *ngIf="selectedHero">
-  <h2>
+  <h2 i18n>
     {{selectedHero.name | uppercase}} is my hero
   </h2>
-  <button (click)="gotoDetail()">View Details</button>
+  <button i18n (click)="gotoDetail()">View Details</button>
 </div>

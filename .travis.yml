@@ -21,11 +21,13 @@ before_script:
     
 script:
 - ng lint
-# use Dev build because we want to use im-memory-web-api
-#- ng build --prod --base-href https://artificerpi.github.io/tour-of-heroes/
-- ng build --base-href https://artificerpi.github.io/tour-of-heroes/
 - ng test --watch=false --browsers=ChromeHeadless
 - ng e2e
+- ng build --prod --base-href https://artificerpi.github.io/tour-of-heroes/
+- "for lang in zh-CN; do
+    ng build --aot --prod --i18n-file src/locale/messages.$lang.xlf --i18n-format xlf --i18n-locale $lang --output-path=dist/$lang --base-href https://artificerpi.github.io/tour-of-heroes/$lang/;
+  done"
+
 
 deploy:
   provider: pages
