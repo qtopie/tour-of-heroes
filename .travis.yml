@@ -41,6 +41,9 @@ jobs:
         - ng e2e
 
     - stage: build
+      cache:
+        directories:
+          - dist/
       script:
         - ng build --prod --base-href https://artificerpi.github.io/tour-of-heroes/
         - "for lang in zh-CN; do
@@ -50,6 +53,9 @@ jobs:
           done"
 
     - stage: release
+      cache:
+        directories:
+          - dist/
       script:
         deploy:
           provider: pages
