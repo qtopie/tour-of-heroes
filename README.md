@@ -4,6 +4,8 @@
 
 Quick start sample for Angular -- [Angular Docs](https://angular.io/tutorial/).
 
+[中文](./README-zh.md)
+
 ## Style Guide
 
 [Angular style guide](https://angular.io/guide/styleguide)
