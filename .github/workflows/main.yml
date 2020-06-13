@@ -2,8 +2,6 @@ name: CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 env:
   CI: true
@@ -38,3 +36,10 @@ jobs:
     - name: Build
       run: |
        $NG_CLI build --prod --base-href https://artificerpi.github.io/tour-of-heroes/
+   
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist
