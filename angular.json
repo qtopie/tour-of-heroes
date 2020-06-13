@@ -73,7 +73,7 @@
                         "main": "src/test.ts",
                         "polyfills": "src/polyfills.ts",
                         "tsConfig": "tsconfig.spec.json",
-                        "karmaConfig": "./src/karma.conf.js",
+                        "karmaConfig": "./karma.conf.js",
                         "scripts": [],
                         "styles": [
                             "src/styles.css"
@@ -90,7 +90,8 @@
                     "options": {
                         "tsConfig": [
                             "tsconfig.app.json",
-                            "tsconfig.spec.json"
+                            "tsconfig.spec.json",
+                            "e2e/tsconfig.json"
                         ],
                         "exclude": [
                             "**/node_modules/**"

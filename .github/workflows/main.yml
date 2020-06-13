@@ -32,11 +32,15 @@ jobs:
 
     - name: Install Dependencies
       run: npm install
+
+    - name: Run tests
+      run: |
+        $NG_CLI test --watch=false --browsers=ChromeHeadless
     
     - name: Build
       run: |
        $NG_CLI build --prod --aot --localize --base-href https://artificerpi.github.io/tour-of-heroes/
-       cp -r dist/en-US/* dist/ && rm -r dist/en-US # set locale of default page to en-US
+       cp -rf dist/en-US/* dist/ && rm -r dist/en-US # set locale of default page to en-US
    
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3

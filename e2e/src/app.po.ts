@@ -1,11 +1,11 @@
-import { browser, element, by } from 'protractor';
+import { browser, by, element } from 'protractor';
 
 export class TourOfHeroesPage {
-  navigateTo() {
-    return browser.get('/');
+  public navigateTo(): Promise<unknown> {
+    return browser.get(browser.baseUrl) as Promise<unknown>;
   }
 
-  getParagraphText() {
+  public getParagraphText() {
     return element(by.css('app-root h1')).getText();
   }
 }
