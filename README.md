@@ -1,6 +1,6 @@
 # Tour Of Heroes
 
-[![Build Status](https://travis-ci.org/artificerpi/tour-of-heroes.svg?branch=master)](https://travis-ci.org/artificerpi/tour-of-heroes)
+[![Build Status](https://github.com/artificerpi/tour-of-heroes/workflows/CI/badge.svg?branch=master)](https://github.com/artificerpi/tour-of-heroes/actions?query=workflow%3ACI)
 
 Quick start sample for Angular -- [Angular Docs](https://angular.io/tutorial/).
 
