@@ -43,7 +43,11 @@
                             }],
                             "serviceWorker": true,
                             "ngswConfigPath": "src/ngsw-config.json"
+                        },
+                        "zh": {
+                            "localize": ["zh"]
                         }
+
                     }
                 },
                 "serve": {
@@ -92,6 +96,12 @@
                             "**/node_modules/**"
                         ]
                     }
+                }
+            },
+            "i18n": {
+                "sourceLocale": "en-US",
+                "locales": {
+                    "zh": "src/locale/messages.zh-CN.xlf"
                 }
             }
         },
