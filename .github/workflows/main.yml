@@ -35,7 +35,9 @@ jobs:
 
     - name: Run tests
       run: |
+        $NG_CLI lint || echo FIXME
         $NG_CLI test --watch=false --browsers=ChromeHeadless
+        # $NG_CLI e2e
     
     - name: Build
       run: |

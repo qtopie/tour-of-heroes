@@ -1,24 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
-import {
-    debounceTime, distinctUntilChanged, switchMap, catchError
-} from 'rxjs/operators';
 import 'rxjs/add/observable/of';
-
-import { HeroSearchService } from './hero-search.service';
+import { catchError, debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import { Hero } from '../shared/hero.model';
+import { HeroSearchService } from './hero-search.service';
+
 
 @Component({
     // moduleId: module.id,
     selector: 'hero-search',
     templateUrl: './hero-search.component.html',
     styleUrls: ['./hero-search.component.css'],
-    providers: [HeroSearchService]
+    providers: [HeroSearchService],
 })
 
 export class HeroSearchComponent implements OnInit {
-    heroes$: Observable<Hero[]>;
+    public heroes$: Observable<Hero[]>;
     private searchTerms = new Subject<string>();
 
     constructor(
@@ -35,10 +33,10 @@ export class HeroSearchComponent implements OnInit {
 
             // switch to new search observable each time the term changes
             switchMap((term: string) => this.heroSearchService.search(term)),
-            catchError(error => {
+            catchError((error) => {
                 console.log(error);
                 return Observable.of<Hero[]>([]);
-            })
+            }),
         );
     }
 
