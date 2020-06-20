@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1592640597874,
+  "timestamp": 1592658594618,
   "index": "https://artificerpi.github.io/tour-of-heroes/index.html",
   "assetGroups": [
     {
@@ -10,9 +10,9 @@
       "urls": [
         "https://artificerpi.github.io/tour-of-heroes/favicon.ico",
         "https://artificerpi.github.io/tour-of-heroes/index.html",
-        "https://artificerpi.github.io/tour-of-heroes/main.1301a684e74cbf5450d7.js",
-        "https://artificerpi.github.io/tour-of-heroes/polyfills-es5.2cf6e7a72f9dcbbdb675.js",
-        "https://artificerpi.github.io/tour-of-heroes/polyfills.9eec5a55779df2d4fe2c.js",
+        "https://artificerpi.github.io/tour-of-heroes/main.8d94e4682bf8990ed8df.js",
+        "https://artificerpi.github.io/tour-of-heroes/polyfills-es5.5a90e2d5208ad7e67d83.js",
+        "https://artificerpi.github.io/tour-of-heroes/polyfills.642985576eb305d09f2a.js",
         "https://artificerpi.github.io/tour-of-heroes/runtime.c51bd5b1c616d9ffddc1.js",
         "https://artificerpi.github.io/tour-of-heroes/styles.90e9c59d9e5047129333.css"
       ],
@@ -46,10 +46,10 @@
     "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://artificerpi.github.io/tour-of-heroes/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://artificerpi.github.io/tour-of-heroes/index.html": "e1fa1fc95a2c4f9186f232894d26043249b2bd63",
-    "https://artificerpi.github.io/tour-of-heroes/main.1301a684e74cbf5450d7.js": "43e3f1743e659f6bf607cda699fc05e0aac4fe87",
-    "https://artificerpi.github.io/tour-of-heroes/polyfills-es5.2cf6e7a72f9dcbbdb675.js": "f1894954ffeadec985319d162fd4f86a621bdf21",
-    "https://artificerpi.github.io/tour-of-heroes/polyfills.9eec5a55779df2d4fe2c.js": "879760c1dbf87cf0f57030cc148e3bb89bb96319",
+    "https://artificerpi.github.io/tour-of-heroes/index.html": "6e675cc82851792e54dba5fae5dd1d2a165dc6b5",
+    "https://artificerpi.github.io/tour-of-heroes/main.8d94e4682bf8990ed8df.js": "43e3f1743e659f6bf607cda699fc05e0aac4fe87",
+    "https://artificerpi.github.io/tour-of-heroes/polyfills-es5.5a90e2d5208ad7e67d83.js": "f1894954ffeadec985319d162fd4f86a621bdf21",
+    "https://artificerpi.github.io/tour-of-heroes/polyfills.642985576eb305d09f2a.js": "879760c1dbf87cf0f57030cc148e3bb89bb96319",
     "https://artificerpi.github.io/tour-of-heroes/runtime.c51bd5b1c616d9ffddc1.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://artificerpi.github.io/tour-of-heroes/styles.90e9c59d9e5047129333.css": "946fd457a9f0be469c6e0d450ec5ab14d26a4350"
   },
