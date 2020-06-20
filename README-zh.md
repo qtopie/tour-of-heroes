@@ -18,5 +18,13 @@
 ./node_modules/.bin/eslint --init
 ```
 
+## 构建
+
+跳过chrome下载
+
+```bash
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+```
+
 ## 参考
 * https://angular.cn/tutorial
