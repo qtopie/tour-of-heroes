@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
-import 'rxjs/add/observable/of';
+import { of } from 'rxjs';
 import { catchError, debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import { Hero } from '../shared/hero.model';
 import { HeroSearchService } from './hero-search.service';
@@ -35,7 +35,7 @@ export class HeroSearchComponent implements OnInit {
             switchMap((term: string) => this.heroSearchService.search(term)),
             catchError((error) => {
                 console.log(error);
-                return Observable.of<Hero[]>([]);
+                return of<Hero[]>([]);
             }),
         );
     }
