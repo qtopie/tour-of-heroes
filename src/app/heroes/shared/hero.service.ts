@@ -1,12 +1,12 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {Observable, of} from 'rxjs';
+import {catchError, tap} from 'rxjs/operators';
 import * as glob from '../../shared/global';
-import { Hero } from '../shared/hero.model';
+import {Hero} from '../shared/hero.model';
 
 const httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+  headers: new HttpHeaders({'Content-Type': 'application/json'}),
 };
 
 @Injectable()
@@ -16,54 +16,53 @@ export class HeroService {
     constructor(private http: HttpClient) { }
 
     public getHeroes(): Observable<Hero[]> {
-        return this.http.get<Hero[]>(this.heroesUrl)
-            .pipe(
-                tap(() => this.log('fetched heroes')),
-                catchError(this.handleError('getHeroes', [])),
-            );
+      return this.http.get<Hero[]>(this.heroesUrl)
+          .pipe(
+              tap(() => this.log('fetched heroes')),
+              catchError(this.handleError('getHeroes', [])),
+          );
     }
 
     public getHero(id: number): Observable<Hero> {
-        const url = `${this.heroesUrl}/${id}`;
-        return this.http.get<Hero>(url)
-            .pipe(
-                tap((_) => this.log(`fetched hero id=${id}`)),
-                catchError(this.handleError<any>(`getHero id=${id}`)),
-            );
-
+      const url = `${this.heroesUrl}/${id}`;
+      return this.http.get<Hero>(url)
+          .pipe(
+              tap((_) => this.log(`fetched hero id=${id}`)),
+              catchError(this.handleError<any>(`getHero id=${id}`)),
+          );
     }
 
     public update(hero: Hero): Observable<Hero> {
-        const url = `${this.heroesUrl}/${hero.id}`;
-        return this.http
-            .put<Hero>(url, hero, httpOptions)
-            .pipe(
-                tap((_) => this.log(`updated hero id=${hero.id}`)),
-                catchError(this.handleError<any>('updateHero')),
-            );
+      const url = `${this.heroesUrl}/${hero.id}`;
+      return this.http
+          .put<Hero>(url, hero, httpOptions)
+          .pipe(
+              tap((_) => this.log(`updated hero id=${hero.id}`)),
+              catchError(this.handleError<any>('updateHero')),
+          );
     }
 
     public create(name: string): Observable<Hero> {
-        return this.http
-            .post<Hero>(this.heroesUrl, { name }, httpOptions)
-            .pipe(
-                tap((hero: Hero) => this.log(`added hero w/ id=${hero.id}`)),
-                catchError(this.handleError<Hero>('addHero')),
-            );
+      return this.http
+          .post<Hero>(this.heroesUrl, {name}, httpOptions)
+          .pipe(
+              tap((hero: Hero) => this.log(`added hero w/ id=${hero.id}`)),
+              catchError(this.handleError<Hero>('addHero')),
+          );
     }
 
     public delete(id: number): Observable<Hero> {
-        const url = `${this.heroesUrl}/${id}`;
-        return this.http.delete<Hero>(url, httpOptions)
-            .pipe(
-                tap((_) => this.log(`deleted hero id=${id}`)),
-                catchError(this.handleError<Hero>('deleteHero')),
-            );
+      const url = `${this.heroesUrl}/${id}`;
+      return this.http.delete<Hero>(url, httpOptions)
+          .pipe(
+              tap((_) => this.log(`deleted hero id=${id}`)),
+              catchError(this.handleError<Hero>('deleteHero')),
+          );
     }
 
     private log(message: string) {
-        // TODO replace console debug
-        // console.debug(message);
+      // TODO replace console debug
+      // console.debug(message);
     }
 
     /**
@@ -73,16 +72,15 @@ export class HeroService {
      * @param result - optional value to return as the observable result
      */
     private handleError<T>(operation = 'operation', result?: T) {
-        return (error: any): Observable<T> => {
+      return (error: any): Observable<T> => {
+        // TODO: send the error to remote logging infrastructure
+        console.error(error); // log to console instead
 
-            // TODO: send the error to remote logging infrastructure
-            console.error(error); // log to console instead
+        // TODO: better job of transforming error for user consumption
+        this.log(`${operation} failed: ${error.message}`);
 
-            // TODO: better job of transforming error for user consumption
-            this.log(`${operation} failed: ${error.message}`);
-
-            // Let the app keep running by returning an empty result.
-            return of(result);
-        };
+        // Let the app keep running by returning an empty result.
+        return of(result);
+      };
     }
 }

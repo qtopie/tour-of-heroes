@@ -8,5 +8,15 @@
 
 [我的简要笔记](docs/README-zh.md)
 
+### ESLint
+
+这里采用[google代码规范](https://github.com/google/eslint-config-google)
+
+初始化
+
+```bash
+./node_modules/.bin/eslint --init
+```
+
 ## 参考
 * https://angular.cn/tutorial
