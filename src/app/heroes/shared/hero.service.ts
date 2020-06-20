@@ -18,7 +18,7 @@ export class HeroService {
     public getHeroes(): Observable<Hero[]> {
         return this.http.get<Hero[]>(this.heroesUrl)
             .pipe(
-                tap(() => this.log(`fetched heroes`)),
+                tap(() => this.log('fetched heroes')),
                 catchError(this.handleError('getHeroes', [])),
             );
     }
@@ -82,7 +82,7 @@ export class HeroService {
             this.log(`${operation} failed: ${error.message}`);
 
             // Let the app keep running by returning an empty result.
-            return of(result as T);
+            return of(result);
         };
     }
 }
