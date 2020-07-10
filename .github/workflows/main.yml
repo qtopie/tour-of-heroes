@@ -41,8 +41,8 @@ jobs:
     
     - name: Build
       run: |
-       $NG_CLI build --prod --aot --localize --base-href https://artificerpi.github.io/tour-of-heroes/
-       $NG_CLI build --prod --aot --base-href https://artificerpi.github.io/tour-of-heroes/ --delete-output-path false
+       $NG_CLI build --prod --localize --base-href https://artificerpi.github.io/tour-of-heroes/
+       $NG_CLI build --prod --base-href https://artificerpi.github.io/tour-of-heroes/ --delete-output-path false
    
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
