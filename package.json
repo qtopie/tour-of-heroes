@@ -24,7 +24,7 @@
         "@angular/pwa": "^0.901.8",
         "@angular/router": "^9.1.11",
         "@angular/service-worker": "^9.1.11",
-        "angular-in-memory-web-api": "~10.2.5",
+        "angular-in-memory-web-api": "~0.13.0",
         "rxjs": "^6.5.5",
         "tslib": "^1.10.0",
         "zone.js": "^0.10.3"
