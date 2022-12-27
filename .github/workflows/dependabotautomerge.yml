@@ -3,10 +3,12 @@ name: "Dependabot Automerge - Action"
 on:
   pull_request:
 
+permissions: read-all|write-all
+
 jobs:
   worker:
     runs-on: ubuntu-latest
-
+    
     if: github.actor == 'dependabot[bot]'
     steps:
       - name: automerge
