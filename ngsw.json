@@ -1,20 +1,20 @@
 {
   "configVersion": 1,
-  "timestamp": 1629215177248,
-  "index": "https://artificerpi.github.io/tour-of-heroes/index.html",
+  "timestamp": 1672155566721,
+  "index": "https://qtopie.github.io/tour-of-heroes/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "https://artificerpi.github.io/tour-of-heroes/favicon.ico",
-        "https://artificerpi.github.io/tour-of-heroes/index.html",
-        "https://artificerpi.github.io/tour-of-heroes/main.5ddb97857a63ed9a6e4f.js",
-        "https://artificerpi.github.io/tour-of-heroes/polyfills-es5.f60be5a5f73f11b617c1.js",
-        "https://artificerpi.github.io/tour-of-heroes/polyfills.6308f90499903cb49fba.js",
-        "https://artificerpi.github.io/tour-of-heroes/runtime.c51bd5b1c616d9ffddc1.js",
-        "https://artificerpi.github.io/tour-of-heroes/styles.90e9c59d9e5047129333.css"
+        "https://qtopie.github.io/tour-of-heroes/favicon.ico",
+        "https://qtopie.github.io/tour-of-heroes/index.html",
+        "https://qtopie.github.io/tour-of-heroes/main.5ddb97857a63ed9a6e4f.js",
+        "https://qtopie.github.io/tour-of-heroes/polyfills-es5.f60be5a5f73f11b617c1.js",
+        "https://qtopie.github.io/tour-of-heroes/polyfills.6308f90499903cb49fba.js",
+        "https://qtopie.github.io/tour-of-heroes/runtime.c51bd5b1c616d9ffddc1.js",
+        "https://qtopie.github.io/tour-of-heroes/styles.90e9c59d9e5047129333.css"
       ],
       "patterns": []
     },
@@ -23,35 +23,35 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
-        "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-128x128.png",
-        "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-144x144.png",
-        "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-152x152.png",
-        "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-192x192.png",
-        "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-384x384.png",
-        "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-512x512.png",
-        "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-72x72.png",
-        "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-96x96.png"
+        "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-128x128.png",
+        "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-144x144.png",
+        "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-152x152.png",
+        "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-192x192.png",
+        "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-384x384.png",
+        "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-512x512.png",
+        "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-72x72.png",
+        "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "https://artificerpi.github.io/tour-of-heroes/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "https://artificerpi.github.io/tour-of-heroes/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://artificerpi.github.io/tour-of-heroes/index.html": "4200777b8f5460891454f1bf2c093da24db76ff5",
-    "https://artificerpi.github.io/tour-of-heroes/main.5ddb97857a63ed9a6e4f.js": "78e43ba489f6631cbebf9227d58cce74fd4bfe15",
-    "https://artificerpi.github.io/tour-of-heroes/polyfills-es5.f60be5a5f73f11b617c1.js": "f1894954ffeadec985319d162fd4f86a621bdf21",
-    "https://artificerpi.github.io/tour-of-heroes/polyfills.6308f90499903cb49fba.js": "879760c1dbf87cf0f57030cc148e3bb89bb96319",
-    "https://artificerpi.github.io/tour-of-heroes/runtime.c51bd5b1c616d9ffddc1.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://artificerpi.github.io/tour-of-heroes/styles.90e9c59d9e5047129333.css": "946fd457a9f0be469c6e0d450ec5ab14d26a4350"
+    "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://qtopie.github.io/tour-of-heroes/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://qtopie.github.io/tour-of-heroes/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://qtopie.github.io/tour-of-heroes/index.html": "e86a3dfc9a056cbe39109a9394d8c7745883553b",
+    "https://qtopie.github.io/tour-of-heroes/main.5ddb97857a63ed9a6e4f.js": "78e43ba489f6631cbebf9227d58cce74fd4bfe15",
+    "https://qtopie.github.io/tour-of-heroes/polyfills-es5.f60be5a5f73f11b617c1.js": "f1894954ffeadec985319d162fd4f86a621bdf21",
+    "https://qtopie.github.io/tour-of-heroes/polyfills.6308f90499903cb49fba.js": "879760c1dbf87cf0f57030cc148e3bb89bb96319",
+    "https://qtopie.github.io/tour-of-heroes/runtime.c51bd5b1c616d9ffddc1.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://qtopie.github.io/tour-of-heroes/styles.90e9c59d9e5047129333.css": "946fd457a9f0be469c6e0d450ec5ab14d26a4350"
   },
   "navigationUrls": [
     {
