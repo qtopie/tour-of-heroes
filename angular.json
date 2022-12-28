@@ -129,7 +129,6 @@
             }
         }
     },
-    "defaultProject": "tour-of-heroes",
     "schematics": {
         "@schematics/angular:component": {
             "prefix": "app",
